@@ -1,0 +1,34 @@
+@include Xs {
+    header {
+        position: static;
+    }
+    .services {
+        .service-parent {
+            display: block;
+        }
+    } 
+    .images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@include Sm {
+   
+    .h2 {
+        font-size: larger;
+    }
+    header {
+        text-align: center;
+        .w_f {
+            width: 100%;
+            float: none;
+        }
+    }
+
+}
+.services {
+    .service-parent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+} 
+@include Md {}
+@include Lg {}

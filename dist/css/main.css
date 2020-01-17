@@ -1,0 +1,270 @@
+.w_f, .get-in .touch .item, header ul, header .logo {
+  width: 50%;
+  float: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.line {
+  background-color: #f05f40;
+  height: 5px;
+  width: 50px;
+  margin: 20px auto;
+  display: block;
+}
+
+.h2, .get-in h2, .download h2, .services .service-parent .item h2, .services h2, .need h2, .home .home-content h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.p, .get-in p, .services .service-parent .item p, .need p, .home .home-content p {
+  margin: 1rem 0;
+  color: #c9c5bd;
+  letter-spacing: 1px;
+}
+
+.my_btn {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  background-color: #f05f40;
+  color: #212567;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all 0.9s ease;
+  -moz-transition: all 0.9s ease;
+  -ms-transition: all 0.9s ease;
+  -o-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+}
+.my_btn:hover {
+  background-color: #212567;
+  color: #f05f40;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: both;
+}
+
+.service-parent .icon_1 {
+  color: #f05f40;
+}
+
+.service-parent .icon_2 {
+  color: #f05f40;
+}
+
+.service-parent .icon_3 {
+  color: #f05f40;
+}
+
+.service-parent .icon_4 {
+  color: #f05f40;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background-color: rgba(39, 44, 122, 0.5);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+}
+header .logo h2 {
+  color: #c9c5bd;
+}
+header ul {
+  list-style: none;
+}
+header ul li {
+  display: inline-block;
+  padding: 10px 15px;
+}
+header ul li a {
+  text-decoration: none;
+  color: #c9c5bd;
+  font-weight: bold;
+  -webkit-transition: color 0.9s ease;
+  -moz-transition: color 0.9s ease;
+  -ms-transition: color 0.9s ease;
+  -o-transition: color 0.9s ease;
+  transition: color 0.9s ease;
+}
+header ul li a:hover {
+  color: #f05f40;
+}
+
+.home {
+  background-image: url(../img/header.jpg);
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+.home .home-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.need {
+  padding: 5rem 0;
+  background-color: #f05f40;
+}
+.need h2 {
+  color: #fff;
+}
+.need .line {
+  background-color: #fff;
+}
+.need .my_btn {
+  background-color: #fff;
+  -webkit-transition: all 0.9s ease;
+  -moz-transition: all 0.9s ease;
+  -ms-transition: all 0.9s ease;
+  -o-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+}
+.need .my_btn:hover {
+  background-color: #212567;
+  color: #c9c5bd;
+}
+
+.services {
+  padding: 5rem 0;
+}
+.services h2 {
+  color: #212567;
+}
+.services .service-parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 30px 0;
+}
+.services .service-parent .item h2 {
+  color: #212567;
+  padding-top: 25px;
+}
+.services .service-parent .item p {
+  color: #212567;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 0;
+}
+.images .my_img {
+  position: relative;
+}
+.images .my_img img {
+  width: 100%;
+}
+.images .my_img:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(242, 115, 88, 0.5);
+  -webkit-transition: all 0.9s ease;
+  -moz-transition: all 0.9s ease;
+  -ms-transition: all 0.9s ease;
+  -o-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+  opacity: 0;
+}
+.images .my_img:hover:before {
+  opacity: 1;
+}
+
+.download {
+  background-color: #333;
+  padding: 5rem 0;
+}
+.download h2 {
+  margin: 20px auto;
+}
+.download .my_btn {
+  background-color: #fff;
+  -webkit-transition: all 0.9s ease;
+  -moz-transition: all 0.9s ease;
+  -ms-transition: all 0.9s ease;
+  -o-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+}
+.download .my_btn:hover {
+  background-color: #212567;
+  color: #c9c5bd;
+}
+
+.get-in {
+  padding: 5rem 0;
+}
+.get-in h2 {
+  color: #212567;
+}
+.get-in p {
+  color: #333;
+}
+.get-in .touch .item {
+  display: grid;
+}
+.get-in .touch .item:last-of-type span {
+  color: #f05f40;
+}
+
+@media (max-width: 575px) {
+  header {
+    position: static;
+  }
+
+  .services .service-parent {
+    display: block;
+  }
+
+  .images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .h2, .home .home-content h2, .need h2, .services h2, .services .service-parent .item h2, .download h2, .get-in h2 {
+    font-size: larger;
+  }
+
+  header {
+    text-align: center;
+  }
+  header .w_f, header .logo, header ul, header .get-in .touch .item, .get-in .touch header .item {
+    width: 100%;
+    float: none;
+  }
+}
+.services .service-parent {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/*# sourceMappingURL=main.css.map */

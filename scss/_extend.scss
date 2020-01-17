@@ -1,0 +1,39 @@
+ 
+.w_f {
+    width: 50%;
+    float: left;
+}
+.text-center {
+    text-align: center;
+}
+.line {
+    background-color: $primaryColor;
+    height: 5px;
+    width: 50px;
+    margin: 20px auto;
+    display: block;
+}
+.h2 {
+    font-size: 2rem;
+    color: #fff;
+}
+.p {
+    margin: 1rem 0;
+    color: $thirdColor;
+    letter-spacing: 1px;
+}
+.my_btn {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: $primaryColor;
+    color: $secondaryColor;
+    font-weight: bold;
+    cursor: pointer;
+    @include transition(all 0.9s ease);
+    &:hover {
+        background-color: $secondaryColor;
+        color: $primaryColor;
+    }
+}
